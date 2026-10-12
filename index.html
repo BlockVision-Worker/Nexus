@@ -1,1 +1,117 @@
+```html
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#09090f">
+    <meta name="description" content="Nexus — Twoja społeczność. Twoje miejsce.">
+    <title>Nexus — Twoje miejsce w sieci</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background-glow"></div>
 
+    <header class="topbar">
+        <a class="brand" href="#">
+            <span class="brand-icon">N</span>
+            <span>NEXUS<span class="brand-dot">.</span></span>
+        </a>
+
+        <div class="topbar-right">
+            <span class="online-indicator"></span>
+            <span class="connection-label">Twoja nowa społeczność</span>
+            <button class="avatar" id="profileButton" title="Twój profil">?</button>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="eyebrow">
+            <span class="eyebrow-dot"></span>
+            TWOJE MIEJSCE W SIECI
+        </div>
+
+        <h1>Więcej niż<br>komunikator<span class="gradient-text">.</span></h1>
+
+        <p class="hero-description">
+            Poznawaj ludzi, twórz społeczności i rozmawiaj bez granic.
+            Twoje miejsce. Twoje zasady. Twój Nexus.
+        </p>
+
+        <div class="hero-actions">
+            <button class="primary-button" id="startButton">
+                Odkryj Nexus <span>→</span>
+            </button>
+            <button class="secondary-button" id="nitroButton">
+                ✦ Nexus Nitro
+            </button>
+        </div>
+
+        <section class="preview-card" id="community">
+            <div class="preview-heading">
+                <div>
+                    <div class="preview-kicker">WKRÓTCE W TWOIM ŚWIECIE</div>
+                    <h2>Twoja przestrzeń</h2>
+                </div>
+                <span class="preview-tag">NEXUS BETA</span>
+            </div>
+
+            <div class="feature-grid">
+                <article class="feature">
+                    <div class="feature-icon purple">✦</div>
+                    <h3>Twoi ludzie</h3>
+                    <p>Spotykaj znajomych i buduj własną społeczność.</p>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon blue">⌘</div>
+                    <h3>Twoje kanały</h3>
+                    <p>Rozmawiaj na tematy, które naprawdę Cię interesują.</p>
+                </article>
+
+                <article class="feature">
+                    <div class="feature-icon gold">♛</div>
+                    <h3>Nexus Nitro</h3>
+                    <p>Odblokuj wyjątkowe możliwości i wyróżnij swój profil.</p>
+                </article>
+            </div>
+        </section>
+
+        <footer>
+            <span>© 2026 NEXUS</span>
+            <span>STWORZONE DLA TWOJEJ SPOŁECZNOŚCI</span>
+        </footer>
+    </main>
+
+    <dialog id="nitroDialog" class="modal">
+        <button class="modal-close" id="closeNitro" aria-label="Zamknij">×</button>
+        <div class="nitro-symbol">✦</div>
+        <div class="preview-kicker">NEXUS PREMIUM</div>
+        <h2>Nexus <span class="gradient-text">Nitro</span></h2>
+        <p>Specjalne możliwości dla wyjątkowych członków społeczności.</p>
+
+        <form id="nitroForm">
+            <label for="nitroCode">Kod aktywacyjny</label>
+            <input id="nitroCode" type="password" placeholder="Wpisz swój kod..." autocomplete="off" required>
+            <button class="primary-button full-button" type="submit">Aktywuj kod →</button>
+        </form>
+
+        <p class="modal-note" id="nitroMessage">
+            System aktywacji zostanie podłączony w kolejnym etapie.
+        </p>
+    </dialog>
+
+    <dialog id="profileDialog" class="modal">
+        <button class="modal-close" id="closeProfile" aria-label="Zamknij">×</button>
+        <div class="nitro-symbol">◎</div>
+        <h2>Twój <span class="gradient-text">Nexus</span></h2>
+        <p>Przygotowujemy system kont, profili i znajomych.</p>
+        <button class="secondary-button full-button" id="profileOk">Rozumiem</button>
+    </dialog>
+
+    <div id="toast" class="toast" role="status"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+```
